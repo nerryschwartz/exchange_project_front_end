@@ -11,18 +11,26 @@ function App() {
       <div>
         <nav>
           <ul>
-            <li><Link to="/your-proposals">Your Proposals</Link></li>
-            <li><Link to="/all-proposals">All Proposals</Link></li>
-            <li><Link to="/matches">Matches</Link></li>
-            <li><Link to="/new-proposal">New Proposal</Link></li>
+            <li>
+              <Link to='/your-proposals'>Your Proposals</Link>
+            </li>
+            <li>
+              <Link to='/all-proposals'>All Proposals</Link>
+            </li>
+            <li>
+              <Link to='/matches'>Matches</Link>
+            </li>
+            <li>
+              <Link to='/new-proposal'>New Proposal</Link>
+            </li>
           </ul>
         </nav>
         <Routes>
-          <Route path="/your-proposals" element={<YourProposals />} />
-          <Route path="/all-proposals" element={<AllProposals />} />
-          <Route path="/matches" element={<Matches />} />
-          <Route path="/new-proposal" element={<NewProposal />} />
-          <Route path="/" element={<YourProposals />} />
+          <Route path='/your-proposals' element={<YourProposals />} />
+          <Route path='/all-proposals' element={<AllProposals />} />
+          <Route path='/matches' element={<Matches />} />
+          <Route path='/new-proposal' element={<NewProposal />} />
+          <Route path='/' element={<YourProposals />} />
         </Routes>
       </div>
     </Router>
